@@ -13,17 +13,17 @@ namespace PhotoFrame.Domain.UseCase
     // TODO: 仮実装
     public class CreateAlbum
     {
-        private readonly IAlbumRepository repository;
+        private readonly IAlbumRepository albumRepository;
 
         public CreateAlbum(IAlbumRepository repository)
         {
-            this.repository = repository;
+            this.albumRepository = repository;
         }
 
         public void Execute(string albumTitle)
         {
             var album = Album.Create(albumTitle);
-            repository.Store(album);
+            albumRepository.Store(album);
         }
     }
 }

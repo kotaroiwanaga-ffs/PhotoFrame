@@ -45,6 +45,7 @@
     <Compile Include="CreateAlbum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchAlbum.cs" />
+    <Compile Include="SearchDirectory.cs" />
     <Compile Include="StartSlideShow.cs" />
     <Compile Include="ToggleFavorite.cs" />
   </ItemGroup>
